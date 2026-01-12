@@ -689,3 +689,247 @@
 #         print(s)
 
 # 28
+
+
+# 
+
+# a,b = 10,20
+# a,b = b,a+b
+
+# # 0,1,1,2,3,5,8,13
+
+
+# toplu
+
+# part 1
+# # 12
+
+# def simpleOrCompound(n):
+#     f = 0
+#     for i in range(2,n//2+1):
+#         if n%i==0:
+#             f = 1
+#     return f
+
+# def sumNumber(n):
+#     n = str(n)
+#     s = 0
+#     for i in n:
+#         i = int(i)
+#         s = s + i
+#     return s
+        
+
+# n = int(input())
+# if n != 1:
+#     f = 0
+#     if simpleOrCompound(n) == 0:
+#         n = n+1
+#         while simpleOrCompound(n) == 1:
+#             n=n+1
+#         print(sumNumber(n))
+#     else:
+#         n = n -1
+#         while simpleOrCompound(n) == 1:
+#             n = n-1
+#         print(sumNumber(n))
+# else:
+#     print('Başqa eded ver')
+
+
+# Loop
+
+
+
+# 137
+
+# x = int(input())
+# n = int(input())
+# s = 0
+# f = 1
+# for i in range(1,n+1,1):
+#     f = f * i
+#     s = s + ((-1)**(i+1)*x**i)/f
+# print(s)
+
+# # 140
+
+# n = input() # Dim9912info2
+# r = '0123456789'
+# s = 0
+# for i in n:
+#     if r.count(i) == 1:
+#         s = s + 1
+# print(s) 
+
+# # 151
+
+# for n in range(10,100):
+#     a = n//10
+#     b = n%10
+#     if a+b == a*b:
+#         print(n)
+
+
+# # 5
+
+# n = input().split() # ['salam','necesen']
+# saitler = 'aıoueəiöü'
+# qalın = "aıou"
+# s = 0
+# t = 0
+# for i in n:
+#     b = []
+#     for j in i:
+#         if saitler.count(j)==1:
+#             b.append(j)
+#     for j in b:
+#         if qalın.count(j) == 1:
+#             s = s + 1
+#         else:
+#             t = t + 1
+#     if len(b) == s or len(b) == t:
+#         print(i)
+
+# 'salam,qardashim,alma'
+
+
+
+# 150
+# s=0
+# c=[]
+# b=input()
+# for i in b:
+#     if i=="a":
+#         s=s+1
+#     else:
+#         c.append(s)
+#         s=0
+# print(max(c))
+
+# s=0
+# for i in range(1000,10000):
+#     a=i//1000
+#     b=i//100%10
+#     c=i//10%10
+#     d=i%10
+#     if a%2==1 and b%2==1 and c%2==1 and d%2==1:
+#         s=s+i
+# print(s)
+
+
+# n = int(input())
+# k = n
+# n = list(str(n))
+# n.sort()
+# n = ''.join(n)
+# n = int(n)
+# if n==k:
+#     print('Yes')
+# else:
+#     print('No')
+
+
+
+# 
+
+# # Binary search
+# def binary_search(arr,target):
+#     left = 0
+#     right = len(a)-1
+#     while left<=right:
+#         mid = (left+right)//2
+#         if a[mid] == n:
+#             return a[mid]
+#         elif a[mid]<n:
+#             left = mid + 1
+#         else:
+#             right = mid - 1
+#     return -1
+# a = [1,3,5,7,11,13,15,27,30,40,55,67]
+# n = int(input())
+# print(binary_search(a,n))
+
+
+    
+# # Bubble sort
+
+# a = [7,3,5,2]
+# n = len(a)
+# for i in n:
+#     for j in range(0,n-i-1):
+#         if a[j] > a[j+1]:
+#             temp = a[j]
+#             a[j] = a[j+1]
+#             a[j+1] = temp
+# print(a)
+
+# n = input().split()
+# a = int(n[0])
+# b= int(n[1])
+# c = int(n[2])
+# print(a**b%c)
+
+# def f(x,elnur):
+#     x = 5
+#     return x+elnur
+    
+# x = 6
+
+# print(f(x,5))
+
+# b = []
+# b = b.append(10)
+# print(b)
+
+
+# n = int(input(),base=2)
+# print(n)
+
+
+# a = [2,3,4,5] # qaydasiz
+# b = a
+# a.reverse()
+# if a==b:
+#     print('1')
+# else:
+#     print('0')
+
+
+# def whiteOrBlack(x,y):
+#     if x%2==0 and y%2==0 or x%2!=0 and y%2!=0:
+#         n = 'Black'
+#     else:
+#         n = 'White'
+#     return n
+# x = int(input())
+# y = int(input())
+# x1 = int(input())
+# y1 = int(input())
+# if whiteOrBlack(x,y) == whiteOrBlack(x1,y1):
+#     print('Yes')
+# else:
+#     print('No')
+
+
+# x = int(input())
+# y = int(input())
+# x1 = int(input())
+# y1 = int(input())
+
+
+# n = input() # aaaaa
+# s = 1
+# b = []
+# for i in range(0,len(n)-1):
+#     if n[i] == n[i+1]:
+#         s = s + 1
+#         if i == len(n)-2:
+#             b.append(s)
+#     else:
+#         b.append(s)
+#         s = 1
+# print(max(b))
+
+
+# shebeke
