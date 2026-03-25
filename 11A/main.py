@@ -933,3 +933,372 @@
 
 
 # shebeke
+
+# n = input().split()
+# b = []
+# for i in range(len(n)):
+#     n[i] = int(n[i])
+# for i in n:
+#     if n.count(i) >=2:
+#         b.append(i*2)
+#     if n.count(i) >= 3:
+#         b.append(i*3)
+# if len(b) == 0:
+#     print(sum(n))
+# else:
+#     print(sum(n)-max(b))
+
+
+# # Klaviaturada 5 rəqəmi göndərilir
+# a = float(input())
+# a = str(a)  
+# a = a+'1' 
+# a = a *2  
+# a = a.split('0')  
+# a = '1'+'1'.join(a)  
+# print(a) 
+
+# print('a','b','c',sep='@',end=' ')
+# print('d','\ne',end='*')
+# print('c,d')  
+
+# print(5,end=' ')
+# print(6)
+
+# print('salam','necesen',sep='\n') 
+
+# print('salam\necesen')
+
+# a = 5
+# b = 6
+# print(a,b)
+
+# 13 Şəbəkə
+# 7
+# # 14 -- Ümumiləşdirici
+# # 6
+
+# # '#' simvollarının sayını tap
+# i = 1
+# while i<6:
+#     print('#')
+#     if i%2==1:
+#         print('###')
+#     if i>=4:
+#         print('#####')
+#     i = i+1
+
+# # 
+# p = 1
+# i = 3
+# while i<=10:
+#     p = p*(i%5)
+#     i = i+1
+# print(p)
+
+# # 
+# a = 84
+# b = 30
+# while a!=0 and b!=0:
+#     if a>b:
+#         a = a%b
+#     else:
+#         b = b%a
+# print(a+b)
+
+
+
+# # 
+# a = 22
+# s = ''
+# while a>0:
+#     q = a%2
+#     a = a//2
+#     s = str(q)+s
+# print(s.count('1'))
+
+# 
+# # Klaviaturdan 60 ededi daxil edilerse
+# n = int(input())
+# s = 0
+# i = 2
+# while s<n:
+#     s = s + i
+#     i = i+2
+# s = s-i+2
+# print(s)
+
+
+# a = 'salam'
+# a = a.find('a',1)
+# print(a)
+
+# a = '      salam'
+# a = a.strip()
+# print(a)
+
+# a = 'Elnurnurnurnur'
+# a = a.replace('nur','mir')
+# print(a)
+
+# a = 'aaaaabbbb'
+# a = a.replace('a','*')
+# a = a.replace('b','a')
+# a = a.replace('*','b')
+# print(a)
+
+# a = [100]
+# for i in range(5):
+#     n = len(a)+1
+#     x = int(input())
+#     a.insert(n,x)
+# print(a)
+
+# a = [2,3,4,5]
+# a.append(5)
+# join split
+# a = ['1','2','3','4']
+# a = '1'.join(a)
+# print(a)
+
+# 156
+
+# aylar = [
+#     'yanvar',
+#     'fevral',
+#     'mart',
+#     'aprel',
+#     'may',
+#     'iyun'
+# ]
+# b = []
+# f = 0
+# b = input().split()
+# for i in range(len(b)):
+#     b[i] = int(b[i])
+# for i in range(1,len(b)-1):
+#     if b[i]>b[i-1] and b[i]>b[i+1]:
+#         print(aylar[i],':',b[i],'eded')
+#         f = 1
+# if f == 0:
+#     print('Uğurlu ay yoxdur')
+
+
+
+# #
+# a = 1
+# b = 12
+# c = 0
+# while a<b:
+#     for i in range(a,b):
+#         if i%3==0:
+#             c = c + i 
+#         else:
+#             c = c - 1
+#     a = a+2
+#     b = b-3
+# print(c) 
+
+
+# 
+# 29,30
+
+
+
+# # 29
+
+# def simpleOrCompound(x):
+#     f = 0
+#     for i in range(2,x//2+1):
+#         if x%i==0:
+#             f = 1
+#     return f
+
+# a = [245,348,124,422,334,232]
+# b = []
+# for i in a:
+#     i = str(i)
+#     c = int(i[0])+int(i[2])
+#     if simpleOrCompound(c) == 0:
+#         b.append(int(i))
+# print(b)
+
+# 30
+
+# a = [1,2,3,4,5]
+# b = sum(a)
+# for i in range(len(a)):
+#     a[i] = b-a[i]
+# print(a)
+
+# a = [2,3,45,5]
+# a.append(7)
+# print(a)
+
+# def f(x):
+#     x.insert(len(x),5)
+#     return x
+        
+
+# a = [2,3,4,5]
+# a = f(a)
+# print(a)
+
+
+# 9.2 Codera
+
+# a = ['aabbbbbbbc','abc']
+# print(max(a))
+
+# a = ['2','3','4','5'] # 2345
+# a = ''.join(a)
+# print(a)
+
+# a = ['45','54','3','4']
+# # a = str(a)
+# print(a) # '['45', '54', '3', '4']'
+
+
+# Klaviaturadan n sayda elementden ibaret siyahının elementləri və k ədədi daxil edilir
+# Siyahının elementlərini yalnız k qədər artıra və ya azalda bilərsiniz. 
+# Siyahının bütün elementlərini bərabərləşdirmək üçün ən azı neçə addım lazım olduğunu 
+# tapan kodu yaz.(Bərabərləşdirmək mümkün deyilsə çapa -1 verin)
+# Nümunə
+# 1:n = 4, k = 2
+# [5,7,17,21]
+# output: 13
+
+# # [4,6,10,18] 
+
+# n = int(input()) # 4
+# k = int(input()) # 2
+# s = []
+# for i in range(n):
+#     a = int(input())
+#     s.append(a)
+# s.sort()
+# f = 0
+# for i in range(0,len(s)-1):
+#     if (s[i+1] - s[i]) % k != 0:
+#         f = 1
+# if f == 1:
+#     print(-1)
+# else:
+#     L = []
+#     for i in range(s[0],s[-1]+1,k):
+#         say = 0
+#         for j in s:
+#                 say = say+abs(i-j)//k
+#         L.append(say)
+#     print(min(L),L)
+
+
+# n = int(input())
+# k = int(input())
+
+# s = []
+# for i in range(n):
+#     s.append(int(input()))
+
+# s.sort()
+
+# # Yoxlama
+# mumkun = 1
+# for i in range(n - 1):
+#     if (s[i + 1] - s[i]) % k != 0:
+#         mumkun = 0
+
+# if mumkun == 0:
+#     print(-1)
+# else:
+#     # k-ya bölüb yeni siyahı yaradırıq
+#     t = []
+#     for i in range(n):
+#         t.append(s[i] // k)
+
+#     # Median
+#     median = t[n // 2]
+
+#     # Minimum əməliyyat sayı
+#     cavab = 0
+#     for i in range(n):
+#         cavab = cavab + abs(t[i] - median)
+
+#     print(cavab)
+
+
+
+# SINA
+
+# Aylıq sınaq
+# 4
+
+
+# a = 's'
+# print(a[-1])
+
+# a = [2,3,5,10,25]
+# m = a[0]
+# for i in a:
+#     if i>m:
+#         m = i
+# print(m)
+
+
+# # 89
+
+# n = input()
+# n = n.replace('a','*')
+# n = n.replace('b','a')
+# n = n.replace('*','b')
+# print(n)
+
+
+# 90
+
+# a = [3,4,15,9,18,16]
+# for i in a:
+#     c = i**0.5
+#     if c == int(c):
+#         print(i)
+
+
+# a = 64
+# a = a**(1/3)
+# print(a)
+
+
+
+
+
+# 29,30
+
+# # 30
+
+# n = int(input())
+# sade_vuruq = 2
+# b = []
+# while n>1:
+#     if n%sade_vuruq == 0:
+#         n = n // sade_vuruq
+#         if b.count(sade_vuruq) == 0:
+#             b.append(sade_vuruq)
+#     else:
+#         sade_vuruq = sade_vuruq+1
+# print(b)
+
+# # 29
+
+# n = input()
+# b = []
+# for i in n:
+#     if b.count(i)==0:
+#         b.append(i)
+# print(b)
+
+
+# # 11.6
+
+# a = [0]*10
+# print(a)
+
